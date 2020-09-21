@@ -1,1 +1,229 @@
 @import "variables";
+
+h1, h2, h3, h4, p, a, ul, li{
+  font-family: $font;
+}
+
+table, td{
+  border: none;
+  vertical-align: top;
+  p{
+    margin: 0;
+  }
+}
+th{
+  text-align: left;
+  background-color: #e8ffe6;
+}
+
+a, p{
+  text-decoration: none;
+  font-weight: 300;
+}
+a{
+  color: $mint;
+  text-decoration: none;
+}
+
+h1, h2, h3, ul{
+  //text-transform: uppercase;
+}
+
+h1, h2, h3{
+  color: $mint;
+  font-weight: 300;
+}
+
+li{
+  color: $mint;
+  list-style: none;
+  text-transform: none;
+}
+li:before{
+  content: "\00BB \0020"
+}
+
+h1, h2{
+  margin-bottom: 25px;
+}
+
+.programm{
+  td:first-child{
+    width: 15%;
+  }
+  td{
+    width: auto;
+  }
+  td:last-child{
+    width: 60%;
+  }
+}
+
+.boxen{
+  display: flex;
+  justify-content: space-between;
+    a{
+      text-decoration: none;
+      color: white;
+      height: 93px;
+      width: 20vw;
+      max-width: 282px;
+      border-radius: 6px;
+      display: block;
+      text-align: center;
+      padding-top: 34px;
+      line-height: 1.2;
+      transition: 0.4s;
+      background-color: $mint;
+      text-transform: uppercase;
+    }
+      a:hover{
+      background-color: $mint_dark;
+      transition: 0.4s;
+    }
+    p{
+      line-height: 1;
+      margin: 0;
+    }
+    p:first-child{
+      margin-top: 16px;
+    }
+  }
+
+.ce_text{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content_bilder img{
+  margin-top: 20px;
+  width: 35%;
+}
+
+.key_facts{
+  display: flex;
+  justify-content: space-between;
+  .ce_image{
+    width: 39%;
+    margin: 0 6%;
+    img{
+      border-radius: 50%;
+    }
+  }
+  .ce_text{
+    width: 45%;
+  }
+}
+
+.ce_form{
+  max-width: 600px;
+  margin: 70px auto 50px auto;
+}
+
+.green{
+  p{
+    color: $mint;
+    font-weight: 400;
+  }
+}
+
+.form_wrapper{
+  max-width: 800px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+
+  .ce_form{
+    max-width: 50%;
+    position: relative;
+    margin-top: 0;
+  }
+
+  span{
+    margin-top: 10px;
+  }
+
+  .checkbox, .radio{
+    margin-right: 30px;
+  }
+  #ctrl_18{
+    margin-top: 45px;
+  }
+
+  label{
+    line-height: 1;
+  }
+
+  .ce_text{
+    width: 48%;
+    position: relative;
+    margin: 0 0 0 40px;
+    ul{
+      padding: 0;
+      li{
+        font-size: 13px;
+        list-style: unset;
+      }
+      li:before{
+        content: unset;
+      }
+    }
+  }
+}
+
+#anmelden_anker{
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  a{
+    text-transform: uppercase;
+    padding-top: 28px;
+    width: 206px;
+  }
+}
+
+
+
+.color_section{
+  //background-color: $mint;
+  @include bg;
+  max-width: unset;
+  p, h1, h2, h3, li, ul, a{
+    font-weight: 300;
+    color: white;
+  }
+}
+
+.button_in_text a{
+  text-decoration: none;
+  color: white;
+  background-color: $mint;
+  height: 79px;
+  width: 244px;
+  border-radius: 6px;
+  display: block;
+  text-align: center;
+  padding-top: 17px;
+  line-height: 1.2;
+  transition: 0.4s;
+}
+.button_in_text a:hover{
+  background-color: $mint_dark;
+  transition: 0.4s;
+}
+
+.widget-submit{
+  button{
+    border: 1px solid gray;
+    background-color: white;
+    transition: 0.4s;
+    margin-top: 30px;
+  }
+  button:hover{
+    transition: 0.4s;
+    background-color: $mint;
+    color: white;
+    border: 1px solid white;
+  }
+}

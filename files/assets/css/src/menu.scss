@@ -1,1 +1,70 @@
 @import "variables";
+
+.mod_mobile_menu{
+  position: absolute;
+  right: 20px;
+  width: 85px;
+  height: auto;
+  z-index: 2;
+  top: 20px;
+}
+
+
+.mobile_menu{
+  .inner{
+    overflow-y: hidden;
+    //background: white;
+    @include bg;
+    h1, h2, h3, p, li, ul, a {
+      color: white;
+      text-decoration: none;
+      list-style: none;
+    }
+    a{
+      width: 100%;
+      font-size: 22px;
+      display: block;
+    }
+    ul{
+      padding: unset;
+      margin: 20px 20px 0 20px;
+    }
+    li{
+      border-bottom: 1px solid white;
+      text-transform: uppercase;
+    }
+    li:last-child{
+      border-bottom: unset;
+    }
+    li:before{
+      content: unset;
+    }
+    strong.active{
+        font-size: 22px;
+      font-weight: 400;
+    }
+    .menu-close{
+      width: 45px;
+      position: absolute;
+      right: 20px;
+      top: 23px;
+      a{
+        img {
+          filter: $icon_mint;
+        }
+      }
+    }
+    .menu_logo{
+      height: 90px;
+      background-color: rgba(255,255,255,0.8);
+      width: 100%;
+      img{
+        position: relative;
+        height: 54px;
+        top: 15px;
+      }
+    }
+  }
+}
+
+
