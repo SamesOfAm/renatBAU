@@ -1,0 +1,30 @@
+@import "variables";
+
+#twitch-embed{
+  iframe{
+    width: 100%;
+  }
+}
+
+.youtube-embed{
+  display: flex;
+  iframe{
+    //width: 100%;
+    //height: auto;
+    top: 0;
+    position: relative;
+  }
+  .stream{
+    position: relative;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .youtube-embed {
+       display: block;
+     }
+  .youtube-embed .stream, .youtube-embed iframe{
+    width: 100%;
+  }
+}

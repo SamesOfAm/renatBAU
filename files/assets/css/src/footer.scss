@@ -2,10 +2,9 @@
 
 #footer{
   bottom: 0;
-  //background-color: $mint;
   @include bg;
   width: 100%;
-  height: 600px;
+  //height: 600px;
   p{
     line-height: 1.4;
   }
@@ -43,12 +42,22 @@
     }
   }
 
-
   .inside{
+    top: 172px;
+  }
+
+  .footer_1{
     display: flex;
     justify-content: space-around;
     top: 172px;
+    flex-wrap: wrap;
   }
+
+  .footer_2{
+    top: 100px;
+    position: relative;
+  }
+
   .adress_social{
     width: 40%;
     color: white;

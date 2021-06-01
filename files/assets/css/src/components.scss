@@ -1,5 +1,19 @@
 @import "variables";
 
+//_________________________________________Quellen
+
+.quellen{
+  p{
+    color: $gray;
+    margin: 0;
+  }
+}
+
+.flexbox_1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 //_________________________________________Slider
 
@@ -21,7 +35,6 @@
 }
 
 
-
 .slider-control .slider-menu {
   width:100%;
   left: unset;
@@ -41,6 +54,9 @@
   margin-top: 50px;
   width: 100%;
   position: relative;
+  .image_container img{
+    width: $content_size;
+  }
   table{
     margin: 20px auto;
     font-style: italic;
@@ -304,7 +320,5 @@
 .mod_eventlist{
   border-bottom: 1px solid gray;
 }
-
-
 
 

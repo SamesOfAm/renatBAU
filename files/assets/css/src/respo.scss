@@ -13,6 +13,7 @@
 
 @media screen and (max-width: $content_size){
 
+
   .mobile{
     display: unset;
   }
@@ -27,6 +28,14 @@
     .mod_article{
       margin-top: 20px;
     }
+  }
+
+  ul{
+    padding: 20px;
+  }
+  li{
+    margin: 0;
+    line-height: unset;
   }
 
   .key_facts{
@@ -62,11 +71,22 @@
         margin: 0;
       }
       .ce_text{
-        width: 300px;
+        max-width: 300px;
         padding: 0;
         margin: 20px 0 0 0;
       }
     }
   }
+
+  .footer_2{
+    top:  110px;
+    img{
+      width: 100px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px){
 
 }

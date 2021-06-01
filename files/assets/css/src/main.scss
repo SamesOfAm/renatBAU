@@ -25,26 +25,40 @@ a{
   text-decoration: none;
 }
 
-h1, h2, h3, ul{
-  //text-transform: uppercase;
-}
-
 h1, h2, h3{
   color: $mint;
   font-weight: 300;
+}
+
+h1{
+  text-align: center;
 }
 
 li{
   color: $mint;
   list-style: none;
   text-transform: none;
+  margin: 0 0 17px 0;
+  line-height: 26px;
 }
 li:before{
-  content: "\00BB \0020"
+  content: "\00BB \0020";
+  margin-left: -1.6em;
+  margin-right: 0.9em;
+  font-size: 21px;
 }
 
 h1, h2{
   margin-bottom: 25px;
+}
+
+//Bildunterschrift
+figcaption{
+  font-style: italic;
+  color: $gray;
+  margin: 36px 0;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 .programm{
@@ -92,7 +106,7 @@ h1, h2{
 
 .ce_text{
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .content_bilder img{
@@ -225,5 +239,66 @@ h1, h2{
     background-color: $mint;
     color: white;
     border: 1px solid white;
+  }
+}
+
+.datenschutz{
+  line-height: 1.1;
+  font-size: 12px;
+}
+
+.form_wrapper label {
+  line-height:1.2;
+}
+
+.widget-radio{
+  background-color: #46AC31;
+  color: white;
+  padding: 44px 0 44px 44px;;
+  border-radius: 6px;
+
+  .radio_container{
+    //transform: translateX(45px);
+    legend{
+      transform: translateY(-15px);
+      text-transform: uppercase;
+      font-weight: unset;
+    }
+    span.option-headline{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+span.mandatory{
+  display: none;
+}
+
+.veranstalter{
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid $mint;
+  padding-top: 66px;
+  margin-top: 29px;
+  .ce_text{
+    width: 250px;
+    table{
+      tr{
+        height: 122px;
+      }
+      td{
+        line-height: 1.2;
+        font-size: 10px;
+        height: unset;
+        vertical-align: middle;
+      }
+    }
+    img{
+      max-height: 100px;
+      max-width: 150px;
+    }
   }
 }
