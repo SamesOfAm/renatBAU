@@ -51,6 +51,9 @@
 
   .boxen{
     flex-wrap: wrap;
+    .ce_text{
+      margin: 0 auto;
+    }
     a{
       width: 230px;
     }
