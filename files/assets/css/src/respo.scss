@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (min-width: $content_size){
+  .mod_mobile_menu{
+    display: none;
+  }
+}
+
 @media screen and (max-width: $content_size){
 
 
@@ -90,6 +96,3 @@
 
 }
 
-@media screen and (max-width: 400px){
-
-}

@@ -19,6 +19,8 @@
       color: white;
       border-bottom: 1px solid white;
       text-transform: uppercase;
+      margin: 0 0 5px 0;
+      padding: 0 0 5px 0;
     }
     li:before{
       content: none;
@@ -43,7 +45,7 @@
   }
 
   .inside{
-    top: 172px;
+    top: 112px;
   }
 
   .footer_1{
@@ -79,8 +81,8 @@
   height: 50px;
   border-radius: 30px;
   z-index: 2;
-  background: white;
-  top: -200px;
+  background-color: white;
+  top: -139px;
   border: 6px solid white;
   transition: 0.4s;
   img{
